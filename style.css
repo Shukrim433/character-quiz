@@ -47,7 +47,8 @@
 }
 
 .right button:hover {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: #51400f;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   cursor: pointer;
 }
 
@@ -146,4 +147,42 @@
   .char-icons img {
     width: 200px;
   }
+}
+
+/*------------ RESULTS PAGE STYLING ---------- */
+
+.results-page {
+  margin: 80px auto;
+  padding: 30px 40px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #b38e22;
+  background: #ffffff;
+  max-width: 545px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.results-page img {
+  width: 250px;
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+}
+.results-page button {
+  width: 200px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: #b38e22;
+  color: white;
+  border-radius: 7px;
+}
+
+.results-page button:hover {
+  background: #51400f;
+  box-shadow: rgb(0, 0, 0) 0px 5px 15px;
+  cursor: pointer;
 }
