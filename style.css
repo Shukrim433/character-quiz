@@ -4,8 +4,71 @@
   box-sizing: border-box;
 }
 
-.container{
-    width: 100%;
-    height: 100vh;
-    background: #13354c;
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  background: #00426d;
+}
+
+/* -----------------WELCOME PAGE STYLING-------------- */
+.welcome-page {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #b38e22;
+  margin: 100px auto;
+  padding: 40px 30px 70px;
+}
+
+.left {
+  display: flex;
+}
+
+.left .icon {
+  width: 200px;
+}
+
+.right {
+  text-align: center;
+}
+
+.right button {
+  min-width: 100px;
+  min-height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #b38e22;
+  color: aliceblue;
+}
+
+.right button:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  cursor: pointer;
+}
+
+@media (min-width: 320px) {
+  .right {
+    margin-top: 20px;
+  }
+  .left {
+    margin-top: 30px;
+  }
+  .left .icon {
+    width: 140px;
+  }
+}
+@media (min-width: 641px) {
+  .left .icon {
+    width: 200px;
+  }
+}
+@media (min-width: 961px) {
+  .left .icon {
+    width: 200px;
+  }
 }
