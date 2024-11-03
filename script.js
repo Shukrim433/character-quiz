@@ -23,6 +23,7 @@ let percy = 0;
 let annabeth = 0;
 let grover = 0;
 
+// 4.
 function stopQuiz() {
   questionsPageEl.style.display = "none";
   resultsPageEl.style.display = "block";
@@ -37,11 +38,11 @@ function stopQuiz() {
     groverCardEl.style.display = "block";
   }
 
-  // if two characters have the same core:
+  // if two characters have the same score:
   function getRandomInt(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
-    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // The maximum is exclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled); // the maximum is exclusive and the minimum is inclusive
   }
 
   if (annabeth == grover && annabeth > percy && grover > percy) {
@@ -61,15 +62,16 @@ function stopQuiz() {
   }
 }
 
+// 1.
 startBtnEl.addEventListener("click", function () {
   welcomePageEl.style.display = "none";
   questionsPageEl.style.display = "block";
   displayQuestions();
 });
 
+// 2.
 function displayQuestions() {
   if (currentQuestionIndex >= questions.length) {
-    //maybe just > no =
     stopQuiz();
     return;
   }
@@ -77,6 +79,7 @@ function displayQuestions() {
   optionsEl.innerHTML = "";
   questionTextEl.textContent = questions[currentQuestionIndex].question;
 
+  // loop through the options for each question
   for (let i = 0; i < questions[currentQuestionIndex].options.length; i++) {
     const optionDiv = document.createElement("div");
     optionsEl.appendChild(optionDiv);
@@ -86,6 +89,7 @@ function displayQuestions() {
   }
 }
 
+// 3.
 optionsEl.addEventListener("click", function (event) {
   const selectedAnswer = event.target.textContent;
 
@@ -100,6 +104,7 @@ optionsEl.addEventListener("click", function (event) {
   displayQuestions();
 });
 
+// 5.
 startAgainBtnEl.addEventListener("click", function () {
   window.location.reload();
 });
