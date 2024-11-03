@@ -25,6 +25,8 @@
 
 .left {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left .icon {
@@ -89,6 +91,8 @@
 
 .char-icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .char-icons img {
   width: 200px;

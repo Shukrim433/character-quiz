@@ -88,8 +88,7 @@ function displayQuestions() {
 
 optionsEl.addEventListener("click", function (event) {
   const selectedAnswer = event.target.textContent;
-  console.log(selectedAnswer, "selected");
-  console.log("percy", questions[currentQuestionIndex].percy);
+
   if (selectedAnswer === questions[currentQuestionIndex].percy) {
     percy++;
   } else if (selectedAnswer === questions[currentQuestionIndex].annabeth) {
@@ -99,10 +98,6 @@ optionsEl.addEventListener("click", function (event) {
   }
   currentQuestionIndex++;
   displayQuestions();
-  console.log(currentQuestionIndex);
-  console.log("percy", percy);
-  console.log("annab", annabeth);
-  console.log("grover", grover);
 });
 
 startAgainBtnEl.addEventListener("click", function () {
