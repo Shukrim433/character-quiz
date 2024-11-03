@@ -12,7 +12,7 @@
 }
 
 /* -----------------WELCOME PAGE STYLING-------------- */
-.welcome-page {
+#welcome-page {
   width: 100%;
   flex-direction: column;
   display: flex;
@@ -76,13 +76,14 @@
 
 /* --------------QUESTIONS PAGE STYLING -------------- */
 
-.questions-page {
+#questions-page {
   margin: 100px auto;
   padding: 40px 30px 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   color: #b38e22;
 }
 
@@ -93,7 +94,7 @@
   width: 200px;
 }
 
-.options {
+#options {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -101,28 +102,28 @@
   text-align: center;
 }
 
-.options div {
+#options div {
   border: 1px solid white;
   border-radius: 10px;
   width: 350px;
-  height: 50px;
+  height: fit-content;
   padding: 7px;
   margin: 1%;
   background: #b38e22;
   color: white;
 }
 
-.options div:hover {
+#options div:hover {
   background: #51400f;
   box-shadow: rgba(0, 0, 0, 0.736) 0px 5px 15px;
   cursor: pointer;
 }
 
 @media (min-width: 320px) {
-  .questions-page {
+  #questions-page {
     margin-top: 140px;
   }
-  .options {
+  #options {
     margin-top: 50px;
   }
   .char-icons img {
@@ -132,10 +133,10 @@
 }
 
 @media (min-width: 641px) {
-  .questions-page {
+  #questions-page {
     margin-top: 70px;
   }
-  .options {
+  #options {
     margin-top: 10px;
   }
   .char-icons img {
@@ -151,7 +152,7 @@
 
 /*------------ RESULTS PAGE STYLING ---------- */
 
-.results-page {
+#results-page {
   margin: 80px auto;
   padding: 30px 40px 70px;
   display: flex;
@@ -165,13 +166,13 @@
   text-align: center;
 }
 
-.results-page img {
+#results-page img {
   width: 250px;
   border-radius: 10px;
   margin: 30px;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
 }
-.results-page button {
+#results-page button {
   width: 200px;
   height: 40px;
   outline: none;
@@ -181,7 +182,7 @@
   border-radius: 7px;
 }
 
-.results-page button:hover {
+#results-page button:hover {
   background: #51400f;
   box-shadow: rgb(0, 0, 0) 0px 5px 15px;
   cursor: pointer;

@@ -8,41 +8,54 @@
   </head>
   <body>
     <div class="container">
-      <!-- <div class="welcome-page">
+      <div id="welcome-page">
         <div class="left">
           <img class="icon" src="/assets/the-hero.png" alt="character-icon" />
-          <img class="icon" src="/assets/the-guardian.png" alt="character-icon" />
+          <img
+            class="icon"
+            src="/assets/the-guardian.png"
+            alt="character-icon"
+          />
           <img class="icon" src="/assets/the-wise.png" alt="character-icon" />
         </div>
         <div class="right">
           <h1>WHICH PERCY JACKSON CHARACTER ARE YOU?</h1>
-          <button>GO</button>
+          <button id="start-btn">GO</button>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="questions-page">
-        <h1>QUESTION TEXT</h1>
+      <div id="questions-page">
+        <h1 id="question-text">QUESTION TEXT</h1>
         <div class="char-icons">
           <img src="/assets/the-hero.png" alt="character-icon" />
           <img src="/assets/the-guardian.png" alt="character-icon" />
           <img src="/assets/the-wise.png" alt="character-icon" />
         </div>
-        <div class="options">
-          <div><h2>option 1</h2></div>
-          <div><h2>option 2</h2></div>
-          <div><h2>option 3</h2></div>
+        <div id="options">
+          <!-- <div class="option"><h2>option 1</h2></div>
+          <div class="option"><h2>option 2</h2></div>
+          <div class="option"><h2>option 3</h2></div> -->
         </div>
-      </div> -->
+      </div>
 
-      <div class="results-page">
-        <h1>CHARACHTER NAME</h1>
-        
-          <!-- <img src="/assets/grover.png" alt="character-art" /> -->
-          <img src="/assets/annabeth.png" alt="character-art" />
-          <!--<img src="/assets/percy.png" alt="character-art" /> -->
-        
-        <button>START AGAIN</button>
-      </div> 
+      <div id="results-page">
+        <div id="percy-result">
+          <h1>PERCY</h1>
+          <img src="/assets/the-hero.png" alt="character-icon" />
+        </div>
+        <div id="annabeth-result">
+          <h1>ANNABETH</h1>
+          <img src="/assets/the-wise.png" alt="character-icon" />
+        </div>
+        <div id="grover-result">
+          <h1>GROVER</h1>
+          <img src="/assets/the-guardian.png" alt="character-icon" />
+        </div>
+
+        <button id="start-again-btn">START AGAIN</button>
+      </div>
     </div>
+    <script src="./script.js"></script>
+    <script src="./questions.js"></script>
   </body>
 </html>
